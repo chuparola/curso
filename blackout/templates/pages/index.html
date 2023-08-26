@@ -1,0 +1,54 @@
+{% extends 'global/base.html' %}
+
+{% block content %}
+
+    <section class="section" id="home">
+        <div class="content">
+            <h1>Desbloqueie seu <span class="text-color">conhecimento</span> <br>com nossos <span class="text-color">cursos</span></h1>
+            <p>Nós da BlackOut temos um único objetivo: Desbloquear todo o<br><span class="text-color">conhecimento</span>. Se junte a nós.</p>
+            <a class="btn1" href="#cursos">Quero conhecimento!</a>
+            <div class="content-button">
+                <a class="btn2" href="#">O que é isso?</a>
+            </div>
+        </div>
+    </section>
+
+    <div class="grid" id="cursos">
+        <div class="cursos1">
+            <h1>Hacker Ético</h1>
+            <p>Tudo tem um início!</p>
+            <ul>
+                <li>Você será capaz <br> de aprender tudo</li>
+                <li>Não precisa de nenhum <br>conhecimento para aprender</li>
+                <li>Nível Básico até o Avançado</li>
+            </ul>
+            <span>R$ 19,90</span>
+            <a href="{% url 'hacker_etico' %}">Comprar</a>
+        </div>
+        <div class="cursos2">
+            <h1>Termux</h1>
+            <p>Seja Confiante!</p>
+            <ul>
+                <li>Você será capaz <br> de aprender tudo</li>
+                <li>Não precisa de nenhum <br>conhecimento para aprender</li>
+                <li>Nível Básico até o Avançado</li>
+            </ul>
+            <span>R$ 19,90</span>
+            <a href="#">Comprar</a>
+        </div>
+        <div class="cursos3">
+            <h1>Criação de Ferramentas</h1>
+            <p>Persista!</p>
+            <ul>
+                <li>Você será capaz <br> de aprender tudo</li>
+                <li>Não precisa de nenhum <br>conhecimento para aprender</li>
+                <li>Nível Básico até o Avançado</li>
+            </ul>
+            <span>R$ 19,90</span>
+            <a href="#">Comprar</a>
+        </div>
+    </div>
+
+    <div class="line-separator"></div>
+
+{% endblock content %}

@@ -1,0 +1,316 @@
+{% extends 'global/base.html' %}
+
+{% load static %}
+
+{% block content %}
+
+    <style>
+
+        :root {
+            --red-color: rgb(244, 81, 71);
+            --black-color: black;
+            --white-color: rgb(255, 230, 230);
+            --gray-color: gray;
+            --color-dark1: rgb(39, 39, 39);
+            --color-green-limon: #03b54d;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+        }
+
+        .input {
+            position: relative;
+            background: var(--black-color);
+            width: 500px;
+            height: 40px;
+            left: 700px;
+            top: -400px;
+            border-radius: 5px;
+            border: none;
+            color: var(--white-color);
+            font-size: 20px;
+        }
+
+        .input:focus {
+            box-shadow: 1px 1px 8px var(--color-green-limon);
+            transition: all 1ms ease-in-out;
+            outline: none;
+        }
+
+        .cursos1 {
+            display: inline-block;
+            position: relative;
+            top: -50px;
+            left: -250px;
+            background: var(--gray-color);
+            height: 370px;
+            width: 295px;
+            border-radius: 10px;
+            background-image: url("{% static 'global/img/cadeado.jpg' %}");
+            background-size: cover;
+            background-position: center center;
+            transition: all 0.3s ease;
+        }
+
+        .cursos1:hover {
+            transform: scale(1.1);
+            box-shadow: 0.1px 0.1px 30px var(--white-color);
+        }
+
+        .cursos1 h1 {
+            position: relative;
+            left: 10px;
+            font-size: 50px;
+        }
+
+        .cursos1 p {
+            position: relative;
+            left: 10px;
+            padding: 10px;
+            font-size: 20px;
+        }
+
+        .cursos1 ul {
+            position: relative;
+            left: 10px;
+            padding: 10px;
+        }
+
+        .cursos1 ul li {
+            padding: 3px;
+            list-style: none;
+        }
+
+        .cursos1 span {
+            position: relative;
+            font-size: 30px;
+            left: -60px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-rows: auto;
+            gap: 10px;
+        }
+
+        .input {
+            position: relative;
+            background: var(--black-color);
+            width: 450px;
+            height: 35px;
+            left: 700px;
+            top: -400px;
+            border-radius: 5px;
+            border: none;
+            color: var(--white-color);
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+
+        .grid h3 {
+            position: relative;
+            left: 530px;
+            top: -400px;
+            padding: 5px;
+            font-size: 18px;
+        }
+
+        .grid p {
+            position: relative;
+            font-size: 12px;
+            top: -430px;
+            left: 700px;
+        }
+
+        .checkbox {
+            position: relative;
+            left: -200px;
+            top: 110px;
+        }
+
+        .input:focus {
+            box-shadow: 1px 1px 8px var(--color-green-limon);
+            transition: all 1ms ease-in-out;
+            outline: none;
+        }
+
+        .btn1 {
+            position: relative;
+            top: -400px;
+            left: 700px;
+            padding-top: 10px;
+            padding-left: 200px;
+            padding-right: 200px;
+            padding-bottom: 10px;
+            border-radius: 10px;
+            background: var(--color-green-limon);
+            border: none;
+            text-decoration: none;
+            color: var(--black-color);
+        }
+
+        .text-center {
+            position: relative;
+            top: -400px;
+            margin-left: 600px;
+            text-align: center;
+        }
+
+        @media all and (max-width: 768px) {
+        .cursos1 {
+            display: none;
+            position: none;
+            top: none;
+            left: none;
+            background: none;
+            height: none;
+            width: none;
+            border-radius: none;
+            }
+
+        .cursos1:hover {
+            transform: none;
+            box-shadow: none;
+        }
+
+        .cursos1 h1 {
+            position: none;
+            left: none;
+            font-size: none;
+        }
+
+        .cursos1 p {
+            position: none;
+            left: none;
+            padding: none;
+            font-size: none;
+        }
+
+        .cursos1 ul {
+            position: none;
+            left: none;
+            padding: none;
+        }
+
+        .cursos1 ul li {
+            padding: none;
+            list-style: none;
+        }
+
+        .cursos1 span {
+            position: none;
+            font-size: none;
+            left: none;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-rows: auto;
+            gap: 10px;
+        }
+
+        .input {
+            position: relative;
+            background: var(--black-color);
+            width: 450px;
+            height: 35px;
+            left: 10px;
+            top: 10px;
+            border-radius: 5px;
+            border: none;
+            color: var(--white-color);
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+
+        .grid h3 {
+            position: relative;
+            top: 10px;
+            left: -170px;
+            padding: 5px;
+            font-size: 18px;
+        }
+
+        .grid p {
+            position: relative;
+            font-size: 12px;
+            top: -20px;
+            left: -1px;
+        }
+
+        .input:focus {
+            box-shadow: 1px 1px 8px var(--color-green-limon);
+            transition: all 1ms ease-in-out;
+            outline: none;
+        }
+
+        .btn1 {
+            position: relative;
+            left: -5px;
+            top: -0.1px;
+            padding-top: 10px;
+            padding-left: 200px;
+            padding-right: 200px;
+            padding-bottom: 10px;
+            border-radius: 10px;
+            background: var(--color-green-limon);
+            border: none;
+            text-decoration: none;
+            color: var(--black-color);
+        }
+
+        .text-center {
+            position: relative;
+            top: -50px;
+            right: 450px;
+        }
+
+        }
+
+    </style>
+
+    <section class="section-two">
+        <div class="content">
+            <div class="cursos1">
+                <h1>Hacker Ético</h1>
+                <p>Tudo tem um início!</p>
+                <ul>
+                    <li>Você será capaz <br> de aprender tudo</li>
+                    <li>Não precisa de nenhum <br>conhecimento para aprender</li>
+                    <li>Nível Básico até o Avançado</li>
+                </ul>
+                <span>R$ 19,90</span>
+            </div>
+        <div class="text-center">
+            <h1>Hacker Ético</h1>
+        </div>
+        <div class="grid">
+            <div>
+                <h3>Seu Cpf</h3>
+                <input class="input" type="text">
+                <p>A cobrança é gerada para o titular deste documento.</p>
+                <h3>Seu nome</h3>
+                <input class="input" type="text">
+                <p>O nome do titular do CPF.</p>
+                <h3>Seu e-mail</h3>
+                <input class="input" type="text">
+                <p>Este é o e-mail onde vai receber seu curso. Se certifique de escrevê-lo corretamente!</p>
+                <a class="btn1" href="#">Continuar</a>
+            </div>
+        </div>
+    </div>
+    </section>
+
+    <div class="line-separator"></div>
+    
+
+{% endblock content %}

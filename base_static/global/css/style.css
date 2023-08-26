@@ -1,0 +1,367 @@
+:root {
+    --red-color: rgb(244, 81, 71);
+    --black-color: black;
+    --white-color: rgb(255, 230, 230);
+    --gray-color: gray;
+    --color-dark1: rgb(39, 39, 39);
+    --color-green-limon: #03b54d;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.grid {
+    position: relative;
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 10px;
+    top: 30px;
+}
+
+.cursos1 {
+    display: inline-block;
+    background: var(--gray-color);
+    height: 370px;
+    width: 295px;
+    border-radius: 10px;
+    background-image: url('../img/cadeado.jpg');
+    background-size: cover;
+    background-position: center center;
+    margin-left: 100px;
+    transition: all 0.3s ease;
+}
+
+.cursos1:hover {
+    transform: scale(1.1);
+    box-shadow: 0.1px 0.1px 30px var(--white-color);
+}
+
+.cursos1 h1 {
+    position: relative;
+    left: 70px;
+    font-size: 50px;
+}
+
+.cursos1 p {
+    position: relative;
+    left: 50px;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.cursos1 ul {
+    position: relative;
+    left: 60px;
+    padding: 10px;
+}
+
+.cursos1 ul li {
+    padding: 3px;
+}
+
+.cursos1 span {
+    position: relative;
+    font-size: 30px;
+    left: 20px;
+}
+
+.cursos1 a {
+    display: inline-block;
+    position: relative;
+    top: 20px;
+    padding-top: 10px;
+    padding-left: 32px;
+    padding-right: 200px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+    background: var(--color-green-limon);
+    border: none;
+    text-decoration: none;
+    color: var(--black-color);
+    transition: all 0.3s ease;
+}
+
+.cursos1 a:hover {
+    transform: scale(1.1);
+    background: var(--white-color);
+}
+
+.cursos2 {
+    display: inline-block;
+    background: var(--gray-color);
+    height: 370px;
+    width: 295px;
+    border-radius: 10px;
+    background-image: url('../img/termux.jpg');
+    background-size: cover;
+    background-position: center center;
+    margin-left: 100px;
+    transition: all 0.3s ease;
+}
+
+.cursos2:hover {
+    transform: scale(1.1);
+    box-shadow: 0.1px 0.1px 30px var(--white-color);
+}
+
+.cursos2 h1 {
+    position: relative;
+    left: 60px;
+    font-size: 50px;
+}
+
+.cursos2 p {
+    position: relative;
+    left: 60px;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.cursos2 ul {
+    position: relative;
+    left: 60px;
+    padding: 10px;
+    top: 30px;
+}
+
+.cursos2 ul li {
+    padding: 3px;
+}
+
+.cursos2 span {
+    position: relative;
+    font-size: 30px;
+    left: 20px;
+    top: 60px;
+}
+
+.cursos2 a {
+    display: inline-block;
+    position: relative;
+    top: 80px;
+    padding-top: 10px;
+    padding-left: 32px;
+    padding-right: 200px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+    background: var(--color-green-limon);
+    border: none;
+    text-decoration: none;
+    color: var(--black-color);
+    transition: all 0.3s ease;
+}
+
+.cursos2 a:hover {
+    transform: scale(1.1);
+    background: var(--white-color);
+}
+
+.cursos3 {
+    display: inline-block;
+    background: var(--gray-color);
+    height: 370px;
+    width: 295px;
+    border-radius: 10px;
+    background-image: url('../img/ferramentas.jpg');
+    background-size: cover;
+    background-position: center center;
+    margin-left: 100px;
+    transition: all 0.3s ease;
+}
+
+.cursos3:hover {
+    transform: scale(1.1);
+    box-shadow: 0.1px 0.1px 30px var(--white-color);
+}
+
+.cursos3 h1 {
+    position: relative;
+    left: 60px;
+    font-size: 30px;
+}
+
+.cursos3 p {
+    position: relative;
+    left: 85px;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.cursos3 ul {
+    position: relative;
+    left: 60px;
+    padding: 10px;
+    top: 20px;
+}
+
+.cursos3 ul li {
+    padding: 3px;
+}
+
+.cursos3 span {
+    position: relative;
+    font-size: 30px;
+    left: 20px;
+    top: 50px;
+}
+
+.cursos3 a {
+    display: inline-block;
+    position: relative;
+    top: 70px;
+    padding-top: 10px;
+    padding-left: 32px;
+    padding-right: 200px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+    background: var(--color-green-limon);
+    border: none;
+    text-decoration: none;
+    color: var(--black-color);
+    transition: all 0.3s ease;
+}
+
+.cursos3 a:hover {
+    transform: scale(1.1);
+    background: var(--white-color);
+}
+
+.section {
+    width: 100%;
+    height: 70vh;
+    background-image: url('../img/banner2.jpg');
+    background-size: cover;
+    background-position: center center;
+}
+
+.section-two {
+    width: 100%;
+    height: 100vh;
+    background: var(--color-dark1);
+}
+
+.line-separator {
+    position: relative;
+    background: var(--gray-color);
+    width: 100%;
+    height: 1px;
+    top: 60px;
+}
+
+.footer {
+    height: 0.1vh;
+    color: var(--gray-color);
+    padding: 30px;
+}
+
+.footer img {
+    width: 60px;
+}
+
+.footer a {
+    position: relative;
+    top: -30px;
+    left: 90%;
+    padding: 5px;
+    text-decoration: none;
+}
+
+.footer p {
+    position: relative;
+    top: 40px;
+    width: 50%;
+    padding-top: 10px;
+}
+
+.footer h1 {
+    position: relative;
+    font-size: 52px;
+    top: 40px;
+}
+
+.text-color {
+    color: var(--color-green-limon);
+}
+
+.btn1 {
+    padding-top: 10px;
+    padding-left: 200px;
+    padding-right: 200px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+    background: var(--color-green-limon);
+    border: none;
+    text-decoration: none;
+    color: var(--black-color);
+}
+
+.btn1:hover {
+    background: var(--white-color);
+    transition: all 0.1s ease-in-out;
+    opacity: 0.5;
+}
+
+.btn2 {
+    text-decoration: none;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0.1px 0.1px 2px var(--color-green-limon);
+    color: var(--color-green-limon);
+    padding-top: 3px;
+    padding-left: 225px;
+    padding-right: 225px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+}
+
+.btn2:hover {
+    background: var(--color-green-limon);
+    color: var(--black-color);
+    transition: all 300ms ease-in-out;
+}
+
+
+
+@media all and (max-width:768px) {
+    .btn1 {
+        text-decoration: none;
+        border: none;
+        border-radius: 10px;
+        box-shadow: 0.1px 0.1px 2px var(--color-green-limon);
+        color: var(--black-color);
+        padding-top: 10px;
+        padding-left: 110px;
+        padding-right: 110px;
+        padding-bottom: 10px;
+        border-radius: 5px;
+    }
+    .btn2 {
+        text-decoration: none;
+        border: none;
+        border-radius: 10px;
+        box-shadow: 0.1px 0.1px 2px var(--color-green-limon);
+        color: var(--color-green-limon);
+        padding-top: 3px;
+        padding-left: 135px;
+        padding-right: 135px;
+        padding-bottom: 10px;
+        border-radius: 5px;
+    }
+    .footer a {
+        position: relative;
+        top: -20px;
+        left: 70%;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: auto;
+        gap: 50px;
+    }
+
+}
+
